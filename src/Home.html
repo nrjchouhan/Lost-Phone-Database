@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lost Phone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+     <link rel="stylesheet" type="text/css"
+          href="grid.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+body, html {
+    height: 100%;
+	margin: 0;
+}
+
+
+.bg {
+    /* The image used  */
+    background-image: url("phone GIF-source.gif"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Full height */
+    height: 100%; 
+	width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:black;
+	
+}
+
+//css for sign in
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+button :hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+//search bar css
+
+// signup form css
+
+ 
+</style>
+</head>
+<body>
+
+
+<nav class="nav nav-tabs navbar navbar-inverse navbar-fixed-top" style="margin: 0">
+  <div class="container" style="padding-top:10px; padding-bottom:10px;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Home.html">Lost Phone</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 71px">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="width:1000px ; height: 660px" >
+    <div class="item active">
+        <h2></h2>
+         <img src="phonelost4.jpg" alt="Los Angeles" style="width:800px ; height: 500px"  >
+           <p style="text-align:right ; font-size: 25px"> we rely on our smartphones for everything and You Lost Phone </p>
+    </div>
+
+    <div class="item">
+        <h2></h2>
+      <img src="phonepolice.jpg" alt="Chicago" style="width:800px ; height: 500px" >
+	  
+        <p style="text-align: right ; font-size: 25px">Lodge a complain and admin will update your info to database</p>
+    </div>
+
+    <div class="item">
+         <h2></h2>
+      <img src="phonethief2.jpg" alt="New York" style="width:800px ; height: 500px">
+	 
+        <p style="text-align: right ; font-size: 25px">Now if the their takes your phone to any mobile service center</p>
+    </div>
+
+	<div class="item">
+        <h2></h2>
+      <img src="find.jpg" alt="New York" style="width:800px ; height: 500px" >
+	  
+        <p style="text-align: right ; font-size: 25px">IMEI number will be used to check if that is a stolen phone or not</p>
+        
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+ <div class="jumbotron" style="padding: 0">
+ <div class="bg">
+ <div class="container">
+  <div class="row" style="margin-top: 150px; margin-bottom:100px;">
+    <div class="col-sm-7 text-center" style="color:#ffffff; font-family: 'verdana', Times, serif; margin-top:50px">
+      <br><p style="font-size: 45px"><b>Lost Your Phone???</b></p>
+	  <p style="font-size: 25px">
+Since smartphones have become an essential part of our lives, the Mobile service can be a necessary preventive measure against the loss of your smartphone. If you have lost your device, try the Mobile service.</p>
+          </div>
+    <div class="col-sm-5">
+    
+	<!--  <div class="well"><h1>Bootstrap Tutorial</h1>      
+  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+</div>  -->
+	  
+    </div>
+  </div>
+  </div>
+</div>   
+</div>
+
+<div class="container">
+            
+     <div class="row">
+         <div class="col-12">
+         <br><br><br>
+             <p >Copyright @2018 all rights are reserved</p>
+             
+         </div>
+     
+     </div>
+     </div>
+</body>
+</html>

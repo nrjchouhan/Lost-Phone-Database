@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+body, html {
+    height: 100%;
+	margin: 0;
+	background-color: #fbfbfb;
+}
+
+.bg {
+    /* The image used  */
+    background-image: url("shutterstock_543093379.jpg"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Full height */
+    height: 100%; 
+	width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:black;
+	
+}
+
+//css for sign in
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav nav-tabs navbar navbar-inverse navbar-fixed-top" style="margin: 0px">
+  <div class="container" style="padding-top:10px; padding-bottom:10px;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Home.html">Lost Phone</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav"><!--
+      <li><a href="#">Page 1</a></li>
+	  <li><a href="#">Page 2</a></li> -->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+ <div class="bg">
+  <div class="container">
+  <div class="row" style="margin-top:150px; margin-left:45px; margin-right:45px;">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+  <!-- Icon will be here -->
+  
+<!--  <h6 style="text-align:center; font-weight:none">some text will be here</h6>  -->
+  <div class="jumbotron" style="background-color:white; padding:10px 20px 30px 20px; margin-left:40px; margin-right:40px;">
+ <h3 style="text-align:center">SignIn Lost Phone</h3>
+<form action="logincheck.php" method="post">
+  <div class="container">
+	  <div class="form-group">
+        <label><b>User Id:</b></label><br/>
+        <input type="text"id="id01" class="form-control inputtextsignin" placeholder="Enter Username" name="userid" required autofocus>
+      </div>
+	  <div class="form-group">
+        <label><b>Password:</b></label><br/>
+        <input type="password" class="form-control inputpasswordsignin" placeholder="Enter Password" name="password" required>
+	  </div>
+	  <div class="form-group">
+        <label><b>User Type:</b></label>
+		<div class="row">
+		<div class="col-sm-6"><div class="radio"><label><input type="radio" name="usertype" value="admin" required> <b>Admin</b></label></div></div>
+		<div class="col-sm-6"><div class="radio"><label><input type="radio" name="usertype" value="service" required> <b>Service Center</b></label></div></div>
+		</div>
+       </div>
+      <button class="signinbtn btn btn-success btn-block" type="submit" style="padding:10px">Sign In</button>
+	  <br/>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1; padding:10px">
+      <button type="reset" class="cancelbtn btn btn-danger">Reset</button>
+     <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+    </div>
+</form>
+
+</div> 
+  </div>
+  <div class="col-sm-3"></div>
+  </div>
+</div>
+</div>
+  
+
+</body>
+</html>

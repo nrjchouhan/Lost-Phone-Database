@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register Service Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+body, html {
+    height: 100%;
+	margin: 0;
+	background-color: #fbfbfb;
+}
+
+.bg {
+    /* The image used  */
+    background-image: url("images.jpg"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Full height */
+    height: 100%; 
+	width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:black;
+	
+}
+#overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+</style>
+</head>
+<body style="background-image: url('back.jpg'); height: auto">
+
+
+<nav class="nav nav-tabs navbar navbar-inverse navbar-fixed-top" style="margin: 0">
+  <div class="container" style="padding-top:10px; padding-bottom:10px; ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="adminpanel.html">Lost Phone</a> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+	<form class="navbar-form navbar-left" name="search" method ="post" action="search.php">
+      <div class="input-group">
+        <input type="text" class="form-control" name="search" placeholder="Enter IMEI Number" style="width:600px">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+	  <li><a href="#">Notifications</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+	  <li><a href="signin.html"><span class="glyphicon glyphicon-log-out"></span> Signout</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="bg">
+<div class="container">
+<div id="overlay" style="margin:100px 200px 100px 200px; padding:30px 50px 30px 50px; color:white">
+  <h2 style="text-align:center">ENTER SERVICE CENTER DETAILS</h2><br/>
+  <form class="form-horizontal" method="post" action="shopregister.php">
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="aadhar">Email ID:</label>
+      <div class="col-sm-8">
+        <input type="email" class="form-control" id="emailid" placeholder="Enter emailid" name="emailid" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="aadhar">Aadhar Number:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="aadhar" placeholder="Enter Aadhar Number" name="aadhar" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="ownername">Name Of Shop Owner:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="ownername" placeholder="Enter owner's name" name="ownername" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="owneraddress">Owner's Address:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="owneraddress" placeholder="Enter address" name="owneraddress" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="phoneno">Contact Number:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="phoneno" placeholder="Enter phone number" name="phoneno" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="dor">Date Of Registration:</label>
+      <div class="col-sm-8">          
+        <input type="date" class="form-control" id="dor" placeholder="MM-DD-YYYY" name="dor" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="shopname">Shop Name:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="shopname" placeholder="Enter shop name" name="shopname" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="shoppassword">Password:</label>
+      <div class="col-sm-8">          
+        <input type="password" class="form-control" id="shoppassword" placeholder="Enter password" name="shoppassword" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="shop address">Shop Address:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="shopaddress" placeholder="Enter shop address" name="shopaddress" required>
+      </div>
+    </div>
+	
+    <div class="form-group">        
+      <div class="col-sm-offset-6 col-sm-6">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
